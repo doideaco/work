@@ -7,7 +7,6 @@ module.exports = function (eleventyConfig) {
  eleventyConfig.addWatchTarget("./src/img/");
 
  return {
-   pathPrefix: '/work/',
    dir: {
 	 input: 'src',
 	 output: 'docs',
