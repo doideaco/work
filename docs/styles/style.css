@@ -1,3 +1,15 @@
 body {
 	background: rebeccapurple;
 }
+
+.project-grid {
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:2.5rem;
+	margin:2rem 0;
+}
+
+.project-grid img {
+	width:100%;
+	height: auto
+}
