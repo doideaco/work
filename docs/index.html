@@ -25,5 +25,28 @@
 </div> 
 
 	</main>
+	<script>
+	
+		document.addEventListener('DOMContentLoaded', function() {
+		  // Get all images with the class "sesame"
+		  const sesameImages = document.querySelectorAll('.sesame');
+		
+		  sesameImages.forEach((image, index) => {
+			console.log(`Image ${index + 1}:`, image.src); // Log each image to check it's being detected
+		
+			image.addEventListener('click', function(event) {
+			  // Prevent the default behavior if the image is inside a link
+			  event.preventDefault();
+			  
+			  // Get the full-size image source (usually the same as src or from a data attribute if used)
+			  const imageUrl = image.src;
+			  
+			  // Open the image in a new tab
+			  window.open(imageUrl, '_blank');
+			});
+		  });
+		});
+
+    </script>
   </body>
 </html>

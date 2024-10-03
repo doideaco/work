@@ -12,7 +12,7 @@
 	
 <style>
 
-body { background: #111 }
+body { background: #182333 }
 
 </style>
 
@@ -21,15 +21,15 @@ body { background: #111 }
   <div class="project-assets">
     <div class="project bottom-pad"><img src="/img/alertlogic.png" alt="Alert Logic / Fortra project screenshots" /></div>
     <div class="project-small bottom-pad">
-     <div class="project"><img src="/img/Incident tuning list.png" alt="Alert Logic / Fortra project screenshots" /></div>
-     <div class="project"><img src="/img/Incident tuning add.png" alt="Alert Logic / Fortra project screenshots" /></div>
-     <div class="project"><img src="/img/Incident tuning tab.png" alt="Alert Logic / Fortra project screenshots" /></div>
-     <div class="project"><img src="/img/Incident tuning pick analytic.png" alt="Alert Logic / Fortra project screenshots" /></div>
-     <div class="project"><img src="/img/devhome.png" alt="Alert Logic / Fortra project screenshots" /></div>
-     <div class="project"><img src="/img/alertrecruit.png" alt="Alert Logic / Fortra project screenshots" /></div>
+     <div class="project"><img src="/img/Incident tuning list.png" alt="Alert Logic / Fortra project screenshots" class="sesame" /></div>
+     <div class="project"><img src="/img/Incident tuning add.png" alt="Alert Logic / Fortra project screenshots" class="sesame" /></div>
+     <div class="project"><img src="/img/Incident tuning tab.png" alt="Alert Logic / Fortra project screenshots" class="sesame" /></div>
+     <div class="project"><img src="/img/Incident tuning pick analytic.png" alt="Alert Logic / Fortra project screenshots" class="sesame" /></div>
+     <div class="project"><img src="/img/devhome.png" alt="Alert Logic / Fortra project screenshots" class="sesame"/></div>
+     <div class="project"><img src="/img/alertrecruit.png" alt="Alert Logic / Fortra project screenshots" class="sesame" /></div>
     </div>
     <div class="project-wide">
-      <div class="project"><img src="/img/almobile.png" alt="Alert Logic / Fortra project screenshots" /></div>
+      <div class="project"><img src="/img/almobile.png" alt="Alert Logic / Fortra project screenshots" class="sesame" /></div>
     </div>
   </div>
 
@@ -39,25 +39,60 @@ body { background: #111 }
     <dl>
       <dt>Client/Brand</dt>
       <dd>Alert Logic / Fortra</dd>
-      <dt>title</dt>
-      <dd>description</dd>
-      <dt>title</dt>
-      <dd>description</dd>
-      <dt>title</dt>
-      <dd>description</dd>
-      <dt>title</dt>
-      <dd>description</dd>
-      <dt>title</dt>
-      <dd>description</dd>
-      <dt>title</dt>
-      <dd>description</dd>
-      <dt>title</dt>
-      <dd>description</dd>
+      <dt>Company info</dt>
+      <dd>Alert Logic was acquired by Fortra during my tenure there. Fortra is a global cybersecurity company headquartered in Eden Prairie, Minnesota, with over 4,000 employees, providing solutions for data security, automation, and threat protection</dd>
+      <dt>Sector/Product type</dt>
+      <dd>Cyber security, protection and remediation. B2B/B2C SaaS, Developer/Engineer tooling</dd>
+      <dt>Title</dt>
+      <dd>User experience and UI Director</dd>
+      <dt>Role</dt>
+      <dd>Built and led a multi-disciplined global design team comprised of User Experience Designers, Prototypers, UI Engineers, Researchers and Technical (Documentation) writers</dd>
+      <dt>Key achievements</dt>
+      <dd>Led initiatives to rebrand product/UI, modernised product/design/engineering workflows. Introduced mobile first design, launched industry first mobile app. Curated and built Storybook based design system. Drove analytics/data analysis, leading to significant reduction in customer churn. Redesigned and relaunched documentation platform</dd>
     </dl>
+    <hr>
+    <dl>
+      <dt>Website</dt>
+      <dd><a href="https://www.alertlogic.com/managed-services/managed-detection-and-response/" target="_blank">https://fortra.com</a></dd>
+    </dl>
+    <hr>
+      <h3>References</h3>
+        <blockquote>
+        <p>I have had the pleasure of working with Alex for a few years under his leadership and direction. He has allowed me to explore and develop ideas of my own, accomplish projects without micromanagement or looking over my shoulder, yet approachable and always available to guide and steer my thoughts to develop great products and features.</p>
+        
+        <p>I can highly recommend Alex as a leader and would expect him to continue to bring his experience and thoughtful guidance to any team or project, and bring both of those to future success.</p>
+        </blockquote>
+        <blockquote>
+        <p>I gotta say, Alex is hands down one of the best UX designers I've worked with. As my manager for the past couple of years, he always found a way to bring out the best in me without micromanaging. He was always there when I needed help and gave me the freedom to explore and improve the product on my own. Alex has a way of making you feel heard and understood, no matter what. He's also a CSS and design wizard, always pushing boundaries and coming up with innovative ideas. Also, he's not afraid to speak his mind, even when it's not what you want to hear. Alex is a great leader, managing the UX team with ease and making sure we deliver features that are useful, usable and needed.</p>
+        </blockquote>
+  
   </aside>
  </div>
 
 </div>
 	</main>
+	<script>
+	
+		document.addEventListener('DOMContentLoaded', function() {
+		  // Get all images with the class "sesame"
+		  const sesameImages = document.querySelectorAll('.sesame');
+		
+		  sesameImages.forEach((image, index) => {
+			console.log(`Image ${index + 1}:`, image.src); // Log each image to check it's being detected
+		
+			image.addEventListener('click', function(event) {
+			  // Prevent the default behavior if the image is inside a link
+			  event.preventDefault();
+			  
+			  // Get the full-size image source (usually the same as src or from a data attribute if used)
+			  const imageUrl = image.src;
+			  
+			  // Open the image in a new tab
+			  window.open(imageUrl, '_blank');
+			});
+		  });
+		});
+
+    </script>
   </body>
 </html>
